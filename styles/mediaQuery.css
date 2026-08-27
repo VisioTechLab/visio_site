@@ -1,0 +1,227 @@
+/* ==========================================================================
+   Responsive Breakpoints & Layout Adapters (Visio-Tech)
+   ========================================================================== */
+
+/* Écrans Moyens / Laptops (993px - 1199px) */
+@media (max-width: 1199px) {
+  .backend {
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+  }
+
+  .backend .backtext h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tablettes et Écrans Intermédiaires (769px - 992px) */
+@media (max-width: 992px) {
+  .navbar-container {
+    padding: 0 25px;
+  }
+
+  .backend {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: calc(var(--navHeight) + 40px) 25px 40px;
+    text-align: center;
+  }
+
+  .backend .backtext {
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .backend .backimg {
+    order: -1;
+  }
+
+  .backend .backimg img {
+    max-height: 300px;
+  }
+
+  /* Vision Section */
+  .vision-content .box-vision {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .vision-content .box-vision .text-of-vision,
+  .vision-content .box-vision .illustrate-vision {
+    width: 100% !important;
+  }
+
+  /* About Section */
+  .about-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Contact Section */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-image-box {
+    height: 250px;
+  }
+}
+
+/* Mobile & Petites Tablettes (<= 768px) - Navigation Drawer */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  /* Affichage des boutons d'ouverture/fermeture */
+  .navicon {
+    display: block;
+  }
+
+  .navicon.respon {
+    display: none;
+  }
+
+  ._navicon {
+    display: none;
+  }
+
+  ._navicon.respon {
+    display: block;
+  }
+
+  /* Navigation Drawer Mobile */
+  .navbar-container .navbar-content {
+    display: none;
+    position: fixed;
+    top: var(--navHeight);
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--colorCard);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 25px 20px;
+    border-top: 1px solid var(--colorBL);
+    animation: slideDown 0.3s ease-in-out forwards;
+  }
+
+  .navbar-container .navbar-content.respon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-container .navbar-content > ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .navbar-container .navbar-content > ul li {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .navbar-container .navbar-content > ul li a {
+    font-size: 1.05rem;
+    display: block;
+  }
+
+  /* Grilles réactives (1 colonne sur mobile) */
+  .services-content .grid-service,
+  .grid-service {
+    grid-template-columns: 1fr !important;
+  }
+
+  .principales {
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  .mission,
+  .vision,
+  .valeurs {
+    max-width: 100% !important;
+  }
+
+  .team_membre {
+    grid-template-columns: 1fr;
+  }
+
+  .membre {
+    max-width: 100% !important;
+    width: 100%;
+  }
+
+  .info-cards-grid,
+  .faq-grid,
+  .pricing-cards,
+  .process-steps,
+  .advantages-grid,
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-content .footer-box-infos {
+    padding: 30px 20px;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+/* Petits Écrans Mobiles (<= 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar-container .labelForCompany h3 {
+    font-size: 1.15rem;
+  }
+
+  .backend .backtext h1 {
+    font-size: 1.6rem;
+  }
+
+  .backend .backtext p {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+  }
+
+  .about-image {
+    height: 220px;
+  }
+
+  .services-content,
+  .vision-content,
+  .contact-section,
+  .card-service-container,
+  .logo-service-container,
+  .website-service-container {
+    padding: 30px 20px !important;
+  }
+}
+
+/* Keyframes d'animation mobile */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

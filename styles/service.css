@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Styles Spécifiques - Service (Visio-Tech)
+   ========================================================================== */
+
+.services-content {
+  padding: 40px;
+}
+
+.services-content .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.services-content .title h2 {
+  font-size: 1.8rem;
+  color: var(--colorMain);
+  font-weight: 700;
+}
+
+.services-content .title > div {
+  width: 60px;
+  height: 4px;
+  background-color: var(--colorSeg);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.services-content .grid-service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.services-content .grid-service .the-service {
+  background-color: var(--colorCard);
+  min-height: 250px;
+  border-radius: var(--borderRadius);
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: all var(--transitionFast);
+  text-decoration: none;
+  color: var(--colorMain);
+  box-shadow: var(--boxShadow);
+}
+
+.services-content .grid-service .the-service:hover {
+  background-color: var(--colorMain);
+  color: var(--colorTexte3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 112, 159, 0.25);
+}
+
+.services-content .grid-service .the-service h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.services-content .grid-service .the-service p {
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--colorTexte2);
+  line-height: 1.5;
+}
+
+.services-content .grid-service .the-service:hover p {
+  color: var(--colorTexte3);
+}
+
+.services-content .grid-service .the-service .circle-of-service {
+  border: 3px solid var(--colorMain);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  transition: all var(--transitionFast);
+}
+
+.services-content .grid-service .the-service:hover .circle-of-service {
+  border-color: var(--colorTexte3);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.services-content .grid-service .the-service .circle-of-service i {
+  font-size: 1.6rem;
+  color: var(--colorMain);
+  transition: color var(--transitionFast);
+}
+
+.services-content .grid-service .the-service:hover .circle-of-service i {
+  color: var(--colorTexte3);
+}
+
+/* Notre vision dans service */
+.vision-content .box-vision {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.vision-content .box-vision .text-of-vision {
+  flex: 1;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.vision-content .box-vision .illustrate-vision {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-content .box-vision .illustrate-vision img {
+  max-width: 100%;
+  height: auto;
+}

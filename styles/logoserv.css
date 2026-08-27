@@ -1,0 +1,345 @@
+/* ==========================================================================
+   Styles Spécifiques - Conception de Logo (Visio-Tech)
+   ========================================================================== */
+
+.logo-service-container {
+  padding: 40px 50px;
+  width: 100%;
+  margin-top: var(--navHeight);
+}
+
+/* Section Hero */
+.logo-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.logo-hero-content h1 {
+  font-size: 2.3rem;
+  color: var(--colorMain);
+  margin-bottom: 20px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.logo-hero-content p {
+  font-size: 1.05rem;
+  color: var(--colorTexte2);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.logo-hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--boxShadow);
+}
+
+/* Boutons CTA */
+.cta-button {
+  padding: 12px 30px;
+  background-color: var(--colorMain);
+  color: var(--colorTexte3);
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transitionFast);
+  box-shadow: 0 4px 15px rgba(0, 112, 159, 0.2);
+}
+
+.cta-button:hover {
+  background-color: var(--colorSeg);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(233, 144, 0, 0.35);
+}
+
+.cta-button.secondary {
+  background-color: var(--colorTexte3);
+  color: var(--colorMain);
+  border: 2px solid var(--colorMain);
+}
+
+.cta-button.secondary:hover {
+  background-color: var(--colorMain);
+  color: var(--colorTexte3);
+}
+
+/* Processus de création */
+.logo-process {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.logo-process h2 {
+  font-size: 2rem;
+  color: var(--colorMain);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.logo-process h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--colorSeg);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.process-step {
+  background-color: var(--colorCard);
+  padding: 30px 20px;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--boxShadow);
+  transition: transform var(--transitionFast), box-shadow var(--transitionFast);
+}
+
+.process-step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 112, 159, 0.15);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background-color: var(--colorMain);
+  color: var(--colorTexte3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.process-step h3 {
+  color: var(--colorMain);
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.process-step p {
+  color: var(--colorTexte2);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Portfolio Logo */
+.logo-portfolio {
+  margin: 60px 0;
+}
+
+.logo-portfolio h2 {
+  font-size: 2rem;
+  color: var(--colorMain);
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.logo-portfolio h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--colorSeg);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+  box-shadow: var(--boxShadow);
+  transition: transform var(--transitionFast);
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transitionMedium);
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.08);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 112, 159, 0.95), transparent);
+  color: var(--colorTexte3);
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform var(--transitionFast);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-overlay h3 {
+  margin-bottom: 6px;
+  font-size: 1.15rem;
+}
+
+.portfolio-overlay p {
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+/* Tarification Logo (Nos Packages) */
+.logo-pricing {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.logo-pricing h2 {
+  font-size: 2rem;
+  color: var(--colorMain);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.logo-pricing h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--colorSeg);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.pricing-card {
+  background-color: var(--colorCard);
+  padding: 35px 25px;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--boxShadow);
+  position: relative;
+  transition: transform var(--transitionFast), box-shadow var(--transitionFast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.pricing-card.featured {
+  border: 2px solid var(--colorSeg);
+}
+
+.featured-badge {
+  position: absolute;
+  top: -14px;
+  right: 20px;
+  background-color: var(--colorSeg);
+  color: var(--colorTexte3);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.pricing-card h3 {
+  color: var(--colorMain);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 2.2rem;
+  color: var(--colorMain);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: left;
+}
+
+.pricing-card ul li {
+  padding: 8px 0 8px 25px;
+  color: var(--colorTexte2);
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.pricing-card ul li::before {
+  content: '\f00c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--colorSeg);
+  position: absolute;
+  left: 0;
+}
+
+/* Section CTA finale */
+.logo-cta {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: var(--colorCard);
+  border-radius: var(--borderRadius);
+  margin: 60px 0;
+}
+
+.logo-cta h2 {
+  font-size: 1.8rem;
+  color: var(--colorMain);
+  margin-bottom: 16px;
+}
+
+.logo-cta p {
+  font-size: 1.05rem;
+  color: var(--colorTexte2);
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}

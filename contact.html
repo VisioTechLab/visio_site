@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Contactez l'équipe de Visio-Tech à Kinshasa pour vos projets de création web, développement d'applications, cartes de visite et conception de logos." />
+  <title>Contactez-nous | Visio-Tech</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/contact.css" />
+  <link rel="stylesheet" href="./styles/mediaQuery.css" />
+  <link rel="stylesheet" href="./styles/css/all.css" />
+  <link rel="shortcut icon" href="./images/offLogVisio.png" type="image/x-icon" />
+  <script src="./javascript/index.js" defer></script>
+  <script src="./javascript/contact.js" defer></script>
+</head>
+
+<body>
+  <div class="container-p">
+    <header class="header-content">
+      <div class="navbar-container">
+        <a href="index.html" class="labelForCompany">
+          <div class="logo">
+            <img src="./images/offLogVisioNo.png" alt="Logo officiel Visio-Tech" />
+          </div>
+          <h3>Visio TECH</h3>
+        </a>
+        <nav class="navbar-content">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <label class="navicon" aria-label="Ouvrir le menu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="_navicon" aria-label="Fermer le menu">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+      </div>
+
+      <div class="backend">
+        <div class="backimg">
+          <img src="./images/femme-service-client.png" alt="Équipe de développeurs web Visio-Tech" />
+        </div>
+        <div class="backtext">
+          <h1>Contactez-nous</h1>
+          <p>
+            Que vous ayez un projet en tête, besoin d'une assistance technique ou souhaitez simplement échanger sur vos
+            besoins en développement web, en création graphique ou en solutions digitales, notre équipe est à votre
+            disposition.
+          </p>
+          <div>
+            <a href="services.html" class="btn-primary">Demander un devis</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="contact-section">
+      <section class="contact-first">
+        <p class="section-intro">
+          Pour en savoir plus sur nos services ou obtenir un devis personnalisé, n'hésitez pas à nous écrire. Notre équipe
+          passionnée est à votre disposition pour répondre à toutes vos questions.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-form-container">
+            <h2>Formulaire de contact</h2>
+            <form id="contactForm" action="#" method="POST" novalidate>
+              <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom complet..." required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Adresse email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="votre.email@domaine.com..."
+                  required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-input" placeholder="Expliquez-nous votre projet..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i> Soumettre
+              </button>
+
+              <div id="formNotification" class="form-notification"></div>
+            </form>
+          </div>
+
+          <div class="contact-image-box">
+            <img src="./images/contact.jpg" alt="Support client et bureau Visio-Tech" />
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-infos">
+        <div class="info-cards-grid">
+          <div class="info-card">
+            <h3>Visio-Tech Kinshasa</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Kinshasa, RDC</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Nos Réseaux</h3>
+            <div class="social-links">
+              <a href="contact.html" aria-label="Facebook Visio-Tech"><i class="fa-brands fa-facebook"></i></a>
+              <a href="contact.html" aria-label="Whatsapp Visio-Tech"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="contact.html" aria-label="Instagram Visio-Tech"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Coordonnées Directes</h3>
+            <p><i class="fas fa-phone"></i> +243 826 469 196</p>
+            <p><i class="fas fa-envelope"></i> info@visio-tech.com</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-faq">
+        <h2 class="section-heading" style="margin-top: 50px;">
+          <i class="fas fa-question-circle" style="color: var(--colorSeg);"></i> Foire aux Questions (FAQ)
+        </h2>
+        <p class="section-intro">
+          Retrouvez ici les réponses aux questions les plus fréquentes posées par nos clients.
+        </p>
+
+        <div class="faq-grid">
+          <div class="faq-card">
+            <h4>Qu'est-ce que Visio-Tech ?</h4>
+            <p>
+              Visio-Tech est une agence informatique basée à Kinshasa spécialisée dans la création de sites web,
+              d'applications métiers, la conception d'identités visuelles et de supports d'impression professionnels.
+            </p>
+          </div>
+
+          <div class="faq-card">
+            <h4>Quels services proposez-vous ?</h4>
+            <p>Nos services comprennent notamment :</p>
+            <ul>
+              <li>Création de sites web vitrines et e-commerce</li>
+              <li>Développement d'applications web et SaaS</li>
+              <li>Conception de logos et chartes graphiques</li>
+              <li>Création et impression de cartes de visite</li>
+            </ul>
+          </div>
+
+          <div class="faq-card">
+            <h4>Comment bénéficier d'un accompagnement sur mon projet ?</h4>
+            <p>
+              Vous pouvez nous joindre directement via notre formulaire ci-dessus ou par téléphone au +243 826 469 196. Un
+              chef de projet analysera votre besoin pour vous soumettre une proposition sur-mesure.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-content">
+      <div class="footer-box-infos">
+        <div class="footer-items">
+          <h3>Visio-Tech</h3>
+          <div></div>
+          <p>Kinshasa, RDC</p>
+          <p>Email: info@visio-tech.com</p>
+          <p>Tél: +243 826 469 196</p>
+        </div>
+        <div class="footer-items">
+          <h3>Liens Utiles</h3>
+          <div></div>
+          <a href="index.html">Accueil</a>
+          <a href="a-propos.html">À Propos</a>
+          <a href="services.html">Services</a>
+          <a href="realisations.html">Réalisations</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-items">
+          <h3>Réseaux Sociaux</h3>
+          <div></div>
+          <a href="contact.html" aria-label="Facebook Visio-Tech">
+            <i class="fa-brands fa-facebook"></i>
+            <span>Visio TECH</span>
+          </a>
+          <a href="contact.html" aria-label="Twitter Visio-Tech">
+            <i class="fa-brands fa-twitter"></i>
+            <span>VisioTECH</span>
+          </a>
+          <a href="contact.html" aria-label="Instagram Visio-Tech">
+            <i class="fa-brands fa-instagram"></i>
+            <span>VisioTECH</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-box-other">
+        <p>Copyright © 2024 <i>Visio TECH</i>. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

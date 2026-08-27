@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio d'applications web et SaaS développées par Visio-Tech à Kinshasa : plateformes e-commerce, outils de gestion et applications métiers." />
+    <title>Applications Web | Visio-Tech</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/service.css" />
+    <link rel="stylesheet" href="../styles/mediaQuery.css" />
+    <link rel="stylesheet" href="../styles/css/all.css" />
+    <link rel="shortcut icon" href="../images/offLogVisio.png" type="image/x-icon" />
+    <script src="../javascript/index.js" defer></script>
+    <style>
+        .app-hero {
+            background-color: var(--colorMain);
+            color: var(--colorTexte3);
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: var(--navHeight);
+        }
+        .app-hero h1 {
+            font-size: 2.2rem;
+            color: var(--colorTexte3);
+            margin-bottom: 10px;
+        }
+        .app-hero p {
+            color: var(--colorTexte4);
+            font-size: 1.1rem;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 3rem 5%;
+        }
+        .portfolio-item {
+            background: var(--colorCard);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .portfolio-item-content {
+            padding: 1.5rem;
+        }
+        .portfolio-item-content h4 {
+            color: var(--colorMain);
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .portfolio-item-content p {
+            color: var(--colorTexte2);
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+        .tech-stack {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+        .tech-stack span {
+            background: #ffffff;
+            color: var(--colorMain);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid var(--colorBL);
+        }
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem 0 1rem 0;
+            flex-wrap: wrap;
+        }
+        .filter-button {
+            background: none;
+            border: 2px solid var(--colorMain);
+            color: var(--colorMain);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .filter-button.active, .filter-button:hover {
+            background: var(--colorMain);
+            color: var(--colorTexte3);
+        }
+        .btn-link {
+            display: inline-block;
+            background-color: var(--colorMain);
+            color: var(--colorTexte3);
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+        .btn-link:hover {
+            background-color: var(--colorSeg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-p">
+        <header class="header-content">
+            <div class="navbar-container">
+                <a href="../index.html" class="labelForCompany">
+                    <div class="logo">
+                        <img src="../images/offLogVisioNo.png" alt="Logo Visio-Tech" />
+                    </div>
+                    <h3>Visio TECH</h3>
+                </a>
+                <nav class="navbar-content">
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../a-propos.html">À Propos</a></li>
+                        <li class="active"><a href="../services.html">Services</a></li>
+                        <li><a href="../realisations.html">Réalisations</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <label class="navicon" aria-label="Ouvrir le menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <label class="_navicon" aria-label="Fermer le menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+            </div>
+        </header>
+
+        <main>
+            <div class="app-hero">
+                <h1>Applications Web & SaaS</h1>
+                <p>Découvrez nos réalisations sur-mesure en développement d'applications</p>
+            </div>
+
+            <section>
+                <div class="filter-buttons">
+                    <button class="filter-button active" data-filter="all">Tous</button>
+                    <button class="filter-button" data-filter="ecommerce">E-commerce</button>
+                    <button class="filter-button" data-filter="saas">SaaS</button>
+                    <button class="filter-button" data-filter="cms">CMS</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="ecommerce">
+                        <img src="../images/bureau.jpg" alt="Projet boutique e-commerce Élégance" />
+                        <div class="portfolio-item-content">
+                            <h4>Boutique en ligne Élégance</h4>
+                            <p>Plateforme e-commerce complète avec système de paiement intégré et gestion des stocks.</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="../contact.html" class="btn-link">Demander un projet similaire</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="saas">
+                        <img src="../images/bureau.jpg" alt="Projet SaaS Gestion RH Pro" />
+                        <div class="portfolio-item-content">
+                            <h4>Gestion RH Pro</h4>
+                            <p>Solution SaaS de gestion des ressources humaines, bulletins de paie et congés.</p>
+                            <div class="tech-stack">
+                                <span>Vue.js</span>
+                                <span>Laravel</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <a href="../contact.html" class="btn-link">Demander un projet similaire</a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="cms">
+                        <img src="../images/bureau.jpg" alt="Projet CMS Portail d'information" />
+                        <div class="portfolio-item-content">
+                            <h4>Portail d'Information</h4>
+                            <p>Plateforme de publication avec système avancé de gestion de contenu et accès abonnés.</p>
+                            <div class="tech-stack">
+                                <span>WordPress</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                            <a href="../contact.html" class="btn-link">Demander un projet similaire</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-content">
+            <div class="footer-box-infos">
+                <div class="footer-items">
+                    <h3>Visio-Tech</h3>
+                    <div></div>
+                    <p>Kinshasa, RDC</p>
+                    <p>Email: info@visio-tech.com</p>
+                    <p>Tél: +243 826 469 196</p>
+                </div>
+                <div class="footer-items">
+                    <h3>Liens Utiles</h3>
+                    <div></div>
+                    <a href="../index.html">Accueil</a>
+                    <a href="../a-propos.html">À Propos</a>
+                    <a href="../services.html">Services</a>
+                    <a href="../realisations.html">Réalisations</a>
+                    <a href="../contact.html">Contact</a>
+                </div>
+                <div class="footer-items">
+                    <h3>Réseaux Sociaux</h3>
+                    <div></div>
+                    <a href="../contact.html" aria-label="Facebook Visio-Tech">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Visio TECH</span>
+                    </a>
+                    <a href="../contact.html" aria-label="Twitter Visio-Tech">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>VisioTECH</span>
+                    </a>
+                    <a href="../contact.html" aria-label="Instagram Visio-Tech">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>VisioTECH</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-box-other">
+                <p>Copyright © 2024 <i>Visio TECH</i>. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.dataset.filter;
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

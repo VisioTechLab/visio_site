@@ -1,0 +1,306 @@
+/* ==========================================================================
+   Styles Généraux des Composants & Cartes (Visio-Tech)
+   ========================================================================== */
+
+/* ___________________________________________________________ */
+/* Grille des Services (Pleine Largeur) */
+.services-content {
+  width: 100%;
+  padding: 60px 50px;
+}
+
+.services-content .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.services-content .title h2 {
+  font-size: 2rem;
+  color: var(--colorMain);
+  font-weight: 700;
+}
+
+.services-content .title > div {
+  width: 70px;
+  height: 4px;
+  background-color: var(--colorSeg);
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.services-content .grid-service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.services-content .grid-service .the-service {
+  background-color: var(--colorCard);
+  color: var(--colorMain);
+  min-height: 260px;
+  border-radius: var(--borderRadius);
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transitionFast);
+  box-shadow: var(--boxShadow);
+}
+
+.services-content .grid-service .the-service:hover {
+  background-color: var(--colorMain);
+  color: var(--colorTexte3);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 112, 159, 0.25);
+}
+
+.services-content .the-service h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.services-content .grid-service .the-service p {
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--colorTexte2);
+  line-height: 1.5;
+}
+
+.services-content .grid-service .the-service:hover p {
+  color: var(--colorTexte3);
+}
+
+.services-content .grid-service .the-service .circle-of-service {
+  border: 3px solid var(--colorMain);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  transition: all var(--transitionFast);
+}
+
+.services-content .the-service:hover .circle-of-service {
+  border-color: var(--colorTexte3);
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.08);
+}
+
+.services-content .circle-of-service i {
+  font-size: 1.6rem;
+  color: var(--colorMain);
+  transition: color var(--transitionFast);
+}
+
+.services-content .the-service:hover .circle-of-service i {
+  color: var(--colorTexte3);
+}
+
+/* ___________________________________________________________ */
+/* Section Vision (Bandeau Pleine Largeur 100%) */
+.vision-content {
+  width: 100%;
+  padding: 60px 50px;
+  background-color: var(--colorCard);
+  margin: 0;
+}
+
+.vision-content > .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.vision-content > .title h2 {
+  font-size: 2rem;
+  color: var(--colorMain);
+  font-weight: 700;
+}
+
+.vision-content > .title div {
+  width: 70px;
+  height: 4px;
+  background-color: var(--colorSeg);
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.vision-content .box-vision {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.vision-content .box-vision .text-of-vision {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--colorTexte);
+}
+
+.vision-content .box-vision .illustrate-vision {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-content .box-vision .illustrate-vision img {
+  max-width: 100%;
+  max-height: 350px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ___________________________________________________________ */
+/* Composants Formulaire & Cartes */
+.contact-section {
+  width: 100%;
+  padding: 60px 50px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: var(--colorCard);
+  border-radius: var(--borderRadius);
+  padding: 40px;
+  box-shadow: var(--boxShadow);
+}
+
+.contact-form-container h2 {
+  font-size: 1.6rem;
+  color: var(--colorMain);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--colorTexte);
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--colorBL);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: var(--colorTexte3);
+  color: var(--colorTexte);
+  transition: border-color var(--transitionFast), box-shadow var(--transitionFast);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--colorMain);
+  box-shadow: 0 0 0 3px rgba(0, 112, 159, 0.2);
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--colorMain);
+  color: var(--colorTexte3);
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transitionFast);
+}
+
+.btn-submit:hover {
+  background-color: var(--colorMainHover);
+  box-shadow: 0 4px 12px rgba(0, 112, 159, 0.3);
+}
+
+.form-notification {
+  margin-top: 15px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: none;
+}
+
+.form-notification.success {
+  display: block;
+  background-color: #e6f4ea;
+  color: var(--colorSuccess);
+  border: 1px solid var(--colorSuccess);
+}
+
+.form-notification.error {
+  display: block;
+  background-color: #fce8e6;
+  color: var(--colorError);
+  border: 1px solid var(--colorError);
+}
+
+.info-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.info-card {
+  background-color: var(--colorMain);
+  color: var(--colorTexte3);
+  border-radius: var(--borderRadius);
+  padding: 28px;
+  text-align: center;
+  box-shadow: var(--boxShadow);
+}
+
+.info-card h3 {
+  font-size: 1.25rem;
+  color: var(--colorSeg);
+  margin-bottom: 12px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.faq-card {
+  background-color: var(--colorCard);
+  border: 1px solid var(--colorBL);
+  border-radius: var(--borderRadius);
+  padding: 28px;
+}
+
+.faq-card h4 {
+  font-size: 1.1rem;
+  color: var(--colorMain);
+  margin-bottom: 10px;
+}
